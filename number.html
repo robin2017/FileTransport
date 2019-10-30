@@ -5,9 +5,11 @@
     <title>Title</title>
 </head>
 <body>
+
+
 <h1>Number.isNaN()支持</h1>
 <script>
-    console.log('当前浏览器信息：',window.navigator.userAgent);
+    console.log('当前浏览器信息：', window.navigator.userAgent);
     if (!Number.isNaN) {
         console.log('当前环境不支持Number.isNaN,使用polyfill');
         Number.isNaN = function (num) {

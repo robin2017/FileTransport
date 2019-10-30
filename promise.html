@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Promise的polyfill实现</h1>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+<script>
+    Promise.resolve('bar')
+        .then(function (foo) {
+            document.write(foo);
+        });
+</script>
+
+
+</body>
+</html>
