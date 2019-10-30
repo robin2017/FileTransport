@@ -9,9 +9,10 @@
 <h1>Promise的polyfill实现</h1>
 <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
 <script>
+    console.log('当前浏览器信息：', window.navigator.userAgent);
     Promise.resolve('bar')
         .then(function (foo) {
-            document.write(foo);
+            console.log(foo);
         });
 </script>
 
