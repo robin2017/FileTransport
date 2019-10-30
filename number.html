@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Number.isNaN()支持</h1>
+<script>
+    if (!Number.isNaN) {
+        console.log('当前环境不支持Number.isNaN,使用polyfill');
+        Number.isNaN = function (num) {
+            return (num !== num);
+        }
+    } else {
+        console.log('当前环境支持Number.isNaN');
+    }
+    console.log('5是不是NaN:', Number.isNaN(5))
+</script>
+
+</body>
+</html>
